@@ -1,0 +1,43 @@
+{
+  "name": "artemis-docs",
+  "version": "0.1.0",
+  "description": "Interactive documentation for the Artemis Engine ecosystem",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "docs": "typedoc",
+    "docs-examples": "node scripts/build-examples.js",
+    "build:complete": "npm run docs && npm run docs-examples && npm run build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0",
+    "prismjs": "^1.29.0",
+    "markdown-it": "^13.0.0",
+    "markdown-it-prism": "^2.3.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.0",
+    "typescript": "^5.0.0",
+    "typedoc": "^0.24.0",
+    "@types/node": "^20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/terminatable/artemis-docs.git"
+  },
+  "keywords": [
+    "artemis",
+    "engine",
+    "zig",
+    "game",
+    "development",
+    "ecs",
+    "documentation"
+  ],
+  "author": "Terminatable",
+  "license": "MIT"
+}
